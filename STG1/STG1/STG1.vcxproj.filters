@@ -5,29 +5,61 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Main Loop">
+      <UniqueIdentifier>{f564bb5d-118a-4e58-8cb5-7686a3756274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WorldLoading">
+      <UniqueIdentifier>{a449680e-f1fc-40c5-94ff-f1053372dcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\World">
+      <UniqueIdentifier>{63c3fb24-6860-42ab-80d1-6725ada6467e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WorldControllers">
+      <UniqueIdentifier>{029c7ce6-3935-4901-b046-069cd9461846}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="World\World.cpp">
+      <Filter>Source Files\World</Filter>
     </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="WorldLoading\MapReader.cpp">
+      <Filter>Source Files\WorldLoading</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\glad.c">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="MainProcedure\main.cpp">
+      <Filter>Source Files\Main Loop</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProcedure\Window.cpp">
+      <Filter>Source Files\Main Loop</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProcedure\GameInitializer.cpp">
+      <Filter>Source Files\Main Loop</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldControlers\WorldControler.cpp">
+      <Filter>Source Files\WorldControllers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="World\World.h">
+      <Filter>Source Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldLoading\MapReader.h">
+      <Filter>Source Files\WorldLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProcedure\Window.h">
+      <Filter>Source Files\Main Loop</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProcedure\GameInitializer.h">
+      <Filter>Source Files\Main Loop</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldControlers\WorldControler.h">
+      <Filter>Source Files\WorldControllers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

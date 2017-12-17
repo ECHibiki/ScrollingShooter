@@ -117,12 +117,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\glad.c" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="glad.c" />
+    <ClCompile Include="MainProcedure\GameInitializer.cpp" />
+    <ClCompile Include="MainProcedure\main.cpp" />
+    <ClCompile Include="MainProcedure\Window.cpp" />
+    <ClCompile Include="WorldControlers\WorldControler.cpp" />
+    <ClCompile Include="WorldLoading\MapReader.cpp" />
+    <ClCompile Include="World\World.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="MainProcedure\GameInitializer.h" />
+    <ClInclude Include="MainProcedure\Window.h" />
+    <ClInclude Include="WorldControlers\WorldControler.h" />
+    <ClInclude Include="WorldLoading\MapReader.h" />
+    <ClInclude Include="World\World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
