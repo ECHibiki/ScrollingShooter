@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Scherezade\Desktop\GitProjects\Verniy\ScrollingShooter\glfw-3.2.1\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Scherezade\Desktop\GitProjects\Verniy\ScrollingShooter\glfw-3.2.1\build\CMakeFiles\8aea5d714c6013538be732a58f321679\uninstall.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Scherezade\Desktop\GitProjects\Verniy\ScrollingShooter\glfw-3.2.1\build\CMakeFiles\uninstall" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8E324284-5C5D-3602-B852-32DF08125C26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
