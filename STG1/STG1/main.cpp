@@ -3,6 +3,7 @@
 #include <iostream>
 
 #include "Window.h"
+#include "GameInitializer.h"
 
 const int width = 800;
 const int height = 800;
@@ -10,6 +11,13 @@ const int height = 800;
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 	glViewport(0, 0, width-200, height-200);
 }
+
+void processInput(GLFWwindow *window)
+{
+	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+		glfwSetWindowShouldClose(window, true);
+}
+
 
 void main() {
 	glfwInit();
@@ -29,9 +37,11 @@ void main() {
 
 	while (!glfwWindowShouldClose(window.window))
 	{
+		processInput(window.window);
+		glClear(GL_COLOR_BUFFER_BIT);
 		glfwSwapBuffers(window.window);
 		glfwPollEvents();
-		glClear(GL_COLOR_BUFFER_BIT);
+
 	}
 
 	glfwTerminate();
