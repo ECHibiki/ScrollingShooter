@@ -8,7 +8,8 @@ MapReader::MapReader(const string& map_path, vector<vector<string>>* map_attribu
 	if (!map_file) printf("Map read err\n");
 	string line;
 	while(getline(map_file, line)){
-		if(line.at(0) != '#'){
+		std::cout << line << endl;
+		if(line.at(0) != '#' && line != "" && line != " "){
 			istringstream iss(line);
 			//copy(istream_iterator<string>(iss),
 			//	istream_iterator<string>(), ostream_iterator<string>(cout, "\n"));
