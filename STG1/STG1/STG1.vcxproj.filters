@@ -179,9 +179,6 @@
     <ClCompile Include="Drawables\Sprites\Sprite.cpp">
       <Filter>Source Files\Drawables\Sprites</Filter>
     </ClCompile>
-    <ClCompile Include="Map Source\MapReader.cpp">
-      <Filter>Source Files\Map Source</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="World\World.h">
@@ -228,11 +225,6 @@
     </ClInclude>
     <ClInclude Include="UI\UI.h">
       <Filter>Source Files\UI</Filter>
-    </ClInclude>
-    <ClInclude Include="Drawables\Sprites\AI\" />
-    <ClInclude Include="Drawables\Sprites\AI\AIControler.cpp" />
-    <ClInclude Include="Drawables\Sprites\AI\BossAIControler.h">
-      <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Drawables\Sprites\AI\EnemyAIControler_A.h">
       <Filter>Source Files\Drawables\Sprites\AI</Filter>
@@ -317,6 +309,9 @@
     </ClInclude>
     <ClInclude Include="Drawables\Sprites\Sprite.h">
       <Filter>Source Files\Drawables\Sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawables\Sprites\AI\BossAIControler.h">
+      <Filter>Source Files\Drawables\Sprites\AI</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

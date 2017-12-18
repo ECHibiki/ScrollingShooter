@@ -4,8 +4,8 @@ GameInitializer::GameInitializer(const string& map_path)
 {
 	vector<vector<string>> map_attributes;
 	MapReader map_reader(map_path, &map_attributes);
-	WorldControler( 
-		buildWorld(map_attributes).boundry
+	WorldControler(
+		buildWorld(map_attributes).getBoundry()
 	);
 }
 

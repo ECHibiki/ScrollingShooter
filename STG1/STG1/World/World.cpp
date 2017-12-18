@@ -6,24 +6,12 @@ World::World(const vector<vector<string>>& map_attributes) {
 
 		string nth_line;
 
-		Drawable refinement_drawable;
-		nth_line = attribute_line.at(6);
-		//shader line
-		if (nth_line.at(0) == 'B') {}
-		nth_line = attribute_line.at(7);
-		//obj line
-		if (nth_line.at(0) == 'B') {}
-		nth_line = attribute_line.at(8);
-		//txture line
-		if (nth_line.at(0) == 'B') {}
-
-
-
 		nth_line = attribute_line.at(0);
 		//sprite
 		Drawable* local_drawable = nullptr;
 		if (nth_line.at(0) == 'E') {
 			if (nth_line.at(1) == 'A') {
+				Drawable refinement_drawable;
 				EnemyA enemy = EnemyA(refinement_drawable);
 				local_drawable = &((Drawable)enemy);
 				enemies.push_back(enemy);
@@ -32,6 +20,7 @@ World::World(const vector<vector<string>>& map_attributes) {
 		}
 		else if (nth_line.at(0) == 'F') {
 			if (nth_line.at(1) == 'A') {
+				Drawable refinement_drawable;
 				BossA boss = BossA(refinement_drawable);
 				local_drawable = &((Drawable)boss);
 				bosses.push_back(boss);
@@ -40,6 +29,7 @@ World::World(const vector<vector<string>>& map_attributes) {
 		}
 		else if (nth_line.at(0) == 'P') {
 			if (nth_line.at(1) == 'A') {
+				Drawable refinement_drawable;
 				PlayerA player = PlayerA(refinement_drawable);
 				local_drawable = &((Drawable)player);
 				players.push_back(player);
@@ -97,6 +87,10 @@ World::World(const vector<vector<string>>& map_attributes) {
 		else if (nth_line.at(0) == '-') {}
 		else cout << "6err " << nth_line << endl;
 	}
+}
+
+const Boundry& World::getBoundry() {
+	return boundry;
 }
 
 

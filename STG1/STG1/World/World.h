@@ -19,8 +19,9 @@ class World
 	vector<Player> players;
 	vector<Boss> bosses;
 	vector<Enemy> enemies;
-public:
 	Boundry boundry;
+public:
+	const Boundry& getBoundry();
 	World(const vector<vector<string>>& map_attributes);
 	~World();
 };
