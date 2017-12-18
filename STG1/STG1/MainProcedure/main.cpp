@@ -11,7 +11,7 @@ using namespace std;
 const int width = 800;
 const int height = 800;
 
-const string map1 = "test";
+const string map1 = "Externals/Maps/Map1.txt";
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 	glViewport(0, 0, width-200, height-200);

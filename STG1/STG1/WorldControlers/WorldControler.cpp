@@ -1,6 +1,8 @@
 #include "WorldControler.h"
 
-WorldControler::WorldControler()
+
+
+WorldControler::WorldControler(const Boundry& boundry)
 {
 }
 
