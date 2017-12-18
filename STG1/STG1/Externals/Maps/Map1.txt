@@ -1,5 +1,5 @@
 #Format:
-#sprite card  bullet  x z bomb   txPath   sPath    objPath
-PlayerA CardA BulletP 0 0 BombA texture/ shaders/ obj/
-EnemyA CardA BulletA 0.5 0 - texture/ shaders/ obj/
-BossA CardA BulletP 0.5 0.5 - texture/ shaders/ obj/
+#sprite card  bullet  x z bomb  objPath sPath txPath   
+PA CA bP 0 0 BA obj/ shaders/ texture/ 
+EA CA bA 5 0 - obj/ shaders/ texture/
+FA CA bP 5 5 - obj/ shaders/ texture/

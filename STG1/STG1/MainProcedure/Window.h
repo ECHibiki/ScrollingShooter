@@ -6,7 +6,7 @@ class Window
 {
 public:
 	GLFWwindow* window;
-	Window(int width, int height, char* name);
+	Window(int width, int height, char * name);
 	~Window();
 };
 
