@@ -179,6 +179,9 @@
     <ClCompile Include="Drawables\Sprites\Sprite.cpp">
       <Filter>Source Files\Drawables\Sprites</Filter>
     </ClCompile>
+    <ClCompile Include="Map Source\MapReader.cpp">
+      <Filter>Source Files\Map Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="World\World.h">
